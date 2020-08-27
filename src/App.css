@@ -340,13 +340,9 @@ h6 {
   transition: var(--mainTransition);
 }
 .price-top {
-  position: absolute;
-  top: 0;
-  left: 0;
   background: rgba(0, 0, 0, 0.8);
-  color: var(--mainWhite);
+  color: var(--mainBlack);
   padding: 0.3rem 0.6rem 0.5rem;
-  border-bottom-right-radius: 1rem;
   font-size: 0.5rem;
   text-align: center;
   transition: var(--mainTransition);
@@ -359,10 +355,10 @@ h6 {
 }
 .room-link {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: scale(0);
-  transition: all 0.3s linear;
+  top: 10;
+  left: 10;
+  /*transform: scale(1); */
+  transition: all 0.3s linear;  
 }
 .img-container:hover {
   background: rgba(0, 0, 0, 0.8);
