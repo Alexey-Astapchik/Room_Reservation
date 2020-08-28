@@ -66,6 +66,7 @@ h6 {
   color: var(--mainBlack);
   padding: 10px 30px;
   border: 1px solid var(--textWhite);
+  border-radius: 10px;
   transition: var(--mainTransition);
   text-transform: uppercase;
   cursor: pointer;
@@ -176,7 +177,6 @@ h6 {
   min-height: calc(100vh - 66px);
   background-image: url("./images/def.jpg");
   background-size: cover;
-  min-height: 70vh;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -185,7 +185,7 @@ h6 {
   margin-top: 25px;
 }
 .roomsHero {
-  background-image: url("./images/r-3.jpg");
+  background-image: url("./images/room-9.jpeg");
   background-attachment: fixed;
   min-height: 70vh;
   margin-top: 25px;
@@ -197,11 +197,15 @@ h6 {
 .banner {
   display: inline-block;
   background: rgba(0, 0, 0, 0.5);
+  border: 1px solid transparent;
+  border-radius: 10px;
   color: var(--mainBlack);
   padding: 2rem 1rem;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
+  box-shadow: var(--lightShadow);
+  transition: var(--mainTransition);
 }
 
 .banner h1 {
