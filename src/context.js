@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
 import items from './data'
 import Room from './components/Room/Room'
+import Client from './Contentful'
+
+
+
+
+
 const RoomContext = React.createContext()
 
 class RoomProvider extends React.Component {
@@ -19,6 +25,16 @@ class RoomProvider extends React.Component {
         maxSize: 0,
         breakfast: false, 
         pets: false 
+    }
+
+    getData = async() => {
+        try {
+            let response = await Client.getEntries({
+                content_type: 'resortRoom'
+            });
+        } catch (error) {
+            console.log('error!')
+        }
     }
 
     componentDidMount() {
